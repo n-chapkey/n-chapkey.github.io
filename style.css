@@ -51,7 +51,6 @@ main img {
   flex: 1;
   margin: 10px;
   width:100%;
-
 }
 
 .item-double {
@@ -60,10 +59,13 @@ main img {
 
 /* -------  Navigation ------- */
 
-header {
+ header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -75,15 +77,10 @@ header {
 /* Makes nav bar horizontal and centers it */
 header nav ul{
   display:flex;
-  justify-content:center;
-}
-
-header nav ul li {
-  /* Moves the navbar links off the bottom of the logo section */
-  padding-bottom: 20px;
-
+  justify-content: space-evenly;
   list-style-type: none;
-}
+} 
+
 #join img{
   width:100%;
 }
@@ -158,23 +155,23 @@ footer p {
 @media all and (min-width:480px){
   /* Header edits */
   header{
-    display:flex;
     justify-content:space-between;
+    flex-direction: row;
   }
-  .logo{
+   .logo{
     text-align: left;
     flex:1;
-    font-size: 60px;
+    font-size: 2.5em;
   }
   header ul {
     flex:1;
-  }
+  } */ 
 
   /* Join Edits */
-  .join{
+  /* .join{
     display:flex;
     flex-direction: row;
-  }
+  } */
   .group{
     display:flex;
     flex-direction:row;
